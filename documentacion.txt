@@ -1,0 +1,8 @@
+Informacion de las apis: 
+"/api/viaje/actividades/id" -> devuelve un arreglo de objetos con el id de la actividad, id del viaje y dia al cual corresponde dicha actividad (Un objeto por cada actividad del viaje)
+"/api/viaje/viajeros/id -> devuelve un arreglo de objetos con el id del viaje y el id del usuario (Un objeto por cada usuario participante)
+
+
+REVISAR:
+"/api/usuario/viaje/id" -> devuelve solo los viajes en los que figura el id del usuario en la tabla de viajes, pero tendria que revisar tambien la tabla de viajesUsuarios donde podrian haberlo agregado a otros viajes
+"/api/viaje/borrar/id" ->  borra bien las actividades de viaje, gastos de viaje y usuarios de viaje que se indican con el id de viaje, pero no borra correctamente el viaje en si de la tabla de viajes

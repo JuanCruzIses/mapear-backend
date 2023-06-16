@@ -4,7 +4,6 @@ const promisePool = pool.promise();
 export const listProvince = async (req, res) => {
     try {
         await promisePool.query('SELECT * FROM provincias')
-        .catch((error)=>console.log(error))
         .then(([rows]) => {
             if (rows) {
                 const response = {
